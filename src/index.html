@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <div class="container__itens">
+            <div class="container__itens" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="images/birthday-cake-153106_1280.png" alt="Bolo">
                 <h1 class="container__title">Contagem regrassiva para o meu aniversario</h1>
-                <p class="container__paragrafo" id="contador">28 de setembro de 2024</p>
+                <p class="container__paragrafo" id="contador"></p>
             </div>
-            <div class="hero__infos">
+            <div class="hero__infos" data-aos="fade-up" data-aos-duration="1000">
                 <ul class="hero__infos__links">
                     <li class="hero__infos__links__item">
                         <b>Localização</b>
@@ -29,12 +30,13 @@
                     </li>
                 </ul>
                 <div class="Btn">
-                    <a href="#" class="hero__infos__Btn">Convite</a>
+                    <a href="#" class="hero__infos__Btn" id="Btn">Convite</a>
                 </div>
             </div>
         </div>
     </header>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
